@@ -1,6 +1,6 @@
 # Ex.No: 2   Matrix Multiplication 
 
-### DATE:                                                                             
+### DATE:13-09-2024                                                                            
 ### REGISTER NUMBER : 212222040119
 
 ### AIM: 
@@ -17,6 +17,7 @@ Algorithm:
 6. Stop the program.
 ### Program:
 
+```
 
 r1, c1 = input("Enter row and column count in matrix 1: ").split() 
 r2, c2 = input("Enter row and column count in matrix 2: ").split() 
@@ -75,69 +76,11 @@ if r1.isnumeric() and c1.isnumeric() and r2.isnumeric() and c2.isnumeric():
 else: 
     print("Enter valid numeric values for matrix dimensions.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 ### Output:
 
-
-Enter the size of a: 2 3
-Enter the size of b: 2 3
-Matrix multiplication is not possible.
-Reason to fail: to do multiplication of matrices the number of columns in matrix ―a[] should be
-equal to the number of rows in matrix in b[] 
-
-
-Enter the size of a: p q
-Enter the size of b: q s
-Matrix multiplication is not possible.
-Reason to fail: to do multiplication of matrices the number of columns in matrix ―a[]
-should be equal to number of rows in matrix ―bl, and rows & columns should be integer
-values. 
-
-
-
-Enter the size of a: 1.5 2
-Enter the size of b: 2 3
-Matrix multiplication is not possible.
-Reason to fail: to do multiplication of matrices the number of columns in matrix ―al should be
-equal to number of rows in matrix ―bl, and rows & columns should be integer values. 
-
-
-Enter the size of a: 350
-480 Enter the size of b:
-480 620
-Matrix multiplication is not possible.
-Reason to fail: size of buffer will be not be sufficient to handle this multiplication. 
-
-
-
-Enter the size of a: -
-1 -2 Enter the size of
-b: -2 3
-Matrix multiplication is not possible.
-Reason to fail: to do multiplication of matrices the number of columns in matrix ―al should
-be equal to number of rows in matrix ―bl, and rows & columns should be positive integer values. 
-
-
-
-
-
-
-
-
-
-
+![ex-02](https://github.com/user-attachments/assets/fbc41230-b04d-44cc-a4c4-d39eddbcce8b)
 
 ### Result:
 Thus, the python program for matrix multiplication is implemented and the causes for its failure is introspected successfully.
+
