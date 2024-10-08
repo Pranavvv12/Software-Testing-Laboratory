@@ -1,3 +1,6 @@
+# EX NO: 5 Write a program in Python language to search a given element is present in the list using Binary search. Introspect the causes for its failure and write down the possible reasons for its failure.
+# DATE:27.09.2024
+# REGISTER NUMBER:212222040119
 ### AIM: 
 Write a python program to check the number is Armstrong number or not and inspect for failures.
 
@@ -14,7 +17,43 @@ Write a python program to check the number is Armstrong number or not and inspec
 9.	Stop the program.
 
 ### Program:
+```
+def binary_search(arr, x):
+    low = 0
+    high = len(arr) - 1
+    mid = 0
 
+    while low <= high:
+        mid = (high + low) // 2
+
+     
+        if arr[mid] < x:
+            low = mid + 1
+        elif arr[mid] > x:
+            high = mid - 1
+        else:
+            return mid 
+    return -1  
+
+arr = [2, 3, 4, 10, 40]
+
+
+x = input("Enter the element to be searched: ")
+
+try:
+    x = int(x)  
+    result = binary_search(arr, x) 
+
+    if result != -1:
+        print("Element is present at index", str(result))
+    else:
+        print("Element is not present in array")
+
+except ValueError:
+    print("Enter a valid input!")  
+
+
+```
 
 
 
@@ -29,6 +68,7 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 ### Output:
 
+![image](https://github.com/user-attachments/assets/534f6b1c-52d1-4c77-9a01-885fbcad1ed7)
 
 
 ### Result:
