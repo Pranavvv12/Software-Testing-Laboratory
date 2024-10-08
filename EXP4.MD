@@ -1,6 +1,6 @@
 # Ex.No: 4 check the given number is Armstrong number or not and inspect for failures.
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 20.09.2024                                                                        
+### REGISTER NUMBER : 212222040119
 ### AIM: 
 Write a python program to check the number is Armstrong number or not and inspect for failures.
 
@@ -16,7 +16,27 @@ Write a python program to check the number is Armstrong number or not and inspec
 9.	Stop the program.
 
 ### Program:
+```
+x = input("Enter the input: ")
 
+if x.isnumeric(): 
+    x = int(x)
+    temp = x
+    cube = 0
+
+    while temp > 0: 
+        digit = temp % 10
+        cube = cube + (digit ** 3)
+        temp //= 10
+
+    if cube == x: 
+        print("Armstrong Number")
+    else: 
+        print("Not Armstrong Number")
+else: 
+    print("Enter a Positive Integer.")
+
+```
 
 
 
@@ -31,6 +51,8 @@ Write a python program to check the number is Armstrong number or not and inspec
 
 ### Output:
 
+
+![exp4 STL](https://github.com/user-attachments/assets/8f30704d-b019-42c5-a140-c99a1691aea4)
 
 
 
